@@ -59,15 +59,30 @@
             <article class="title">
                 <h1>Bienvenido</h1>
             </article>
-            <article class="opctions">
-                <button onclick="retirar()">Retirar</button>
-                <button onclick="ingresar()">Ingresar</button>
-                <button onclick="verSaldo()">Ver saldo</button>
-            </article>
             <div id="saldo">
+                 
+                <p class="link"> <ion-icon class="logo1" name="logo-dropbox"></ion-icon>Saldo disponible: </p>
                 <p id="saldo-actual"></p>
-                <button onclick="ocultarSaldo()">Cerrar</button>
+                <button onclick="ocultarSaldo()">Ocultar saldo</button>
             </div>
+            <article class="options">
+                <div class="op">
+                    <button onclick="verSaldo()"><ion-icon class="button-icon" name="logo-usd"></ion-icon></button>
+                    <p>Ver Saldo</p>
+                </div>
+                <div class="op">
+                    <button onclick="retirar()"><ion-icon class="button-icon" name="trending-down"></ion-icon></button>
+                    <p>Retirar</p>
+                </div>
+                <div class="op">
+                    <button onclick="ingresar()"><ion-icon class="button-icon" name="trending-up"></ion-icon></button>
+                    <p>Depositar</p>
+                </div>
+                <div class="op"><button><ion-icon class="button-icon1" name="apps"></ion-icon></button>
+                    <p>Más</p>
+                </div>
+            </article>
+            
 
         </aside>
     </section>

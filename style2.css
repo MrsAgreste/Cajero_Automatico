@@ -65,9 +65,9 @@ header {
     background-color: rgba(0, 136, 169, 0.8);
     color: #ecf0f1;
 }
-button:hover {
+/* button:hover {
     background-color: rgba(0, 136, 169, 0.8);
-}
+} */
 
 .ion-icon {
     color: #ecf0f1;
@@ -97,7 +97,7 @@ aside {
     background-color: #f4f5f5;
     margin: 25px 20px;
     padding: 25px 20px;
-    box-shadow: #070124;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .link {
     color: #8a0e79;
@@ -141,4 +141,55 @@ p {
 .ion-icon2 {
 color: #8a0e79;
 padding: 0px 10px;
+}
+
+h1 {
+    font-size: 35px;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Monotype Corsiva';
+}
+
+.options {
+    text-align: center;
+}
+
+#saldo {
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 9px 25px;
+    /* background-color: rgba(0,136,169,1); */
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 16px;
+    color: #070124;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.button-icon {
+    border-radius: 3em;
+    background-color: #0088a9;
+    color: #f4f5f5;
+    padding: 10px;
+    font-size: 30px;
+}
+.button-icon1 {
+    border-radius: 3em;
+    border:2px solid #0088a9;
+    padding: 14px;
+    font-size: 20px;
+}
+.op {
+    display: inline-block;
+}
+.logo1 {
+    padding: 0px 15px 0px 10px;
 }

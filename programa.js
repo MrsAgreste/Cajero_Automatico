@@ -3,7 +3,7 @@ let saldo = localStorage.getItem("saldo"); // Recuperar saldo del localStorage
 let nombre = localStorage.getItem("nombre"); // Recuperar nombre del localStorage
 
 // Mostrar mensaje de bienvenida con el nombre del usuario
-document.querySelector("h1").textContent = `Bienvenido, ${nombre}!`;
+document.querySelector("h1").textContent = `Bienvenido(a) ${nombre}!`;
 
 function actualizarSaldo() {
   document.getElementById("saldo-actual").textContent = `$${saldo}`;
