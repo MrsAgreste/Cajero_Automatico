@@ -15,18 +15,63 @@
 </head>
 
 <body>
-    <h1>Bienvenido</h1>
-    <div>
-        <button onclick="retirar()">Retirar</button>
-        <button onclick="ingresar()">Ingresar</button>
-        <button onclick="verSaldo()">Ver saldo</button>
-        <button onclick="cerrarSesion()">Cerrar sesión</button>
-    </div>
-    <div id="saldo">
-        <p id="saldo-actual"></p>
-        <button onclick="ocultarSaldo()">Cerrar</button>
-    </div>
+    <header>
 
+        <ion-icon class="logo" name="logo-dropbox"></ion-icon>
+        <nav>
+            <ul class="nav_links">
+                <li> <a href="#">Resumen</a></li>
+                <li><a href="#">Actividad</a></li>
+                <li><a href="#">Enviar y solicitar dinero</a></li>
+                <li><a href="#">Mi cartera</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+        <div class="to-rigth">
+            <ion-icon class="ion-icon" name="notifications-outline"></ion-icon>
+            <ion-icon class="ion-icon" name="settings"></ion-icon>
+        </div>
+        <a href="#"> <button class="logOut" onclick="cerrarSesion()"> Cerrar sesión</button></a>
+        
+    </header>
+
+    <section class="main">
+        <article class="left-side">
+            <div class="link-up">
+                <p class="link">Vincular una tarjeta <ion-icon name="play"></ion-icon></ion-icon></p> 
+                <p>Manten la información de tu tarjeta segura al comprar</p>
+                <hr>
+                <p class="link">Vincular cuenta bancaria <ion-icon name="play"></ion-icon></p>
+                <p>Usala para enviar dinero a tus amigos en la unión europea sin coste alguno</p>
+            </div>
+            <div class="pay-method">
+               <p class="payment"> <ion-icon class="ion-icon1" name="checkmark-circle-outline"></ion-icon> Formas de pago</p> 
+               <ul class="links-count"> <hr>
+                <li class="link-actual"><ion-icon class="ion-icon2" name="podium"></ion-icon> Saldo Actual</li> <hr>
+                <li> <ion-icon class="ion-icon2" name="cube"></ion-icon>Nómina</li> <hr>
+                <li><ion-icon class="ion-icon2" name="cart"></ion-icon>Ahorros Mamá</li> <hr>
+                <li> <ion-icon class="ion-icon2" name="wallet"></ion-icon>Guardadito</li> <hr>
+               </ul>
+            </div>
+        </article>
+        <aside>
+            <article class="title">
+                <h1>Bienvenido</h1>
+            </article>
+            <article class="opctions">
+                <button onclick="retirar()">Retirar</button>
+                <button onclick="ingresar()">Ingresar</button>
+                <button onclick="verSaldo()">Ver saldo</button>
+            </article>
+            <div id="saldo">
+                <p id="saldo-actual"></p>
+                <button onclick="ocultarSaldo()">Cerrar</button>
+            </div>
+
+        </aside>
+    </section>
+    
 </body>
 
 </html>

@@ -1,3 +1,144 @@
 /* -------------------------------------------------------------
 Estilos de la pagina de validaciones
 ------------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    height: 100vh;
+}
+li,a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 12px 5%;
+    /* background-color: #24252A; */
+    /* background-color: #993976; */
+    background: rgb(27, 0, 36);
+        background: linear-gradient(90deg, rgba(27, 0, 36, 1) 0%, rgba(121, 9, 95, 1) 46%, rgba(255, 0, 178, 1) 97%);
+}
+
+.logo  {
+    cursor: pointer;
+    color: #ecf0f1;
+    font-size: 30px;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: #0088a9;
+}
+.logOut {
+    padding: 9px 25px;
+    /* background-color: rgba(0,136,169,1); */
+    background-color: #FFBEFF;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 16px;
+    color: #070124;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.logOut:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+    color: #ecf0f1;
+}
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.ion-icon {
+    color: #ecf0f1;
+    font-size: 30px;
+        padding: 8px 10px 0px 10px;
+}
+.to-rigth {
+    text-align: right;
+    /* background-color: #ecf0f1; */
+    flex: 20;
+
+}
+
+.main {
+    display: flex;
+}
+.left-side {
+    flex: 30;
+    background-color: #e2e2e2;
+    height: 90vh;
+}
+aside {
+    flex: 70;
+}
+
+.link-up {
+    background-color: #f4f5f5;
+    margin: 25px 20px;
+    padding: 25px 20px;
+    box-shadow: #070124;
+}
+.link {
+    color: #8a0e79;
+    font-weight: bold;
+    padding: 10px  0px 0px 10px;
+}
+hr {
+    color: #9e9e9e;
+}
+
+p {
+    padding: 10px;
+}
+
+.payment {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 0px 0px 25px;
+}
+.ion-icon1 {
+    color: #000000;
+    font-weight: bold;
+}
+.links-count {
+    padding: 20px 0px 20px 20px;
+    list-style: none;
+}
+.links-count li {
+    color: #000000;
+    padding: 18px;
+}
+.links-count li:hover {
+    color: #000000;
+    background-color: #e45ee9;
+}
+.link-actual {
+    background-color: #f7aff7;
+}
+.ion-icon2 {
+color: #8a0e79;
+padding: 0px 10px;
+}
