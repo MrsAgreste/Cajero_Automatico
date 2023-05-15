@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Librerias de Iconos -->
+    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="programa.js"></script>
+    <title>Programa</title>
+</head>
+
+<body>
+    <h1>Bienvenido</h1>
+    <div>
+        <button onclick="retirar()">Retirar</button>
+        <button onclick="ingresar()">Ingresar</button>
+        <button onclick="verSaldo()">Ver saldo</button>
+        <button onclick="cerrarSesion()">Cerrar sesión</button>
+    </div>
+    <div id="saldo">
+        <p id="saldo-actual"></p>
+        <button onclick="ocultarSaldo()">Cerrar</button>
+    </div>
+
+</body>
+
+</html>

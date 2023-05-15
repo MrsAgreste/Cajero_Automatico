@@ -1,3 +1,7 @@
+/* ---------------------------------------------------------
+Estilos de la pagina de inicio de sesión
+----------------------------------------------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 * {
     padding: 0;
@@ -79,3 +83,7 @@ button {
     font-size: 1em;
     font-weight: 600;
 }
+
+/* -------------------------------------------------------------
+Estilos de la pagina de validaciones
+------------------------------------------------------------- */

@@ -7,10 +7,6 @@
     <!-- Librerias de Iconos -->
     <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <!-- Librerias de Boostrap -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
@@ -25,15 +21,15 @@
                     <h2>BIENVENIDO</h2>
                     <div class="inputbox">
                         <ion-icon name="people-outline"></ion-icon>
-                        <input type="text" placeholder=" " required>
+                        <input type="text" id="username" name="username" placeholder=" " required>
                         <label for="">Nombre de usuario</label>
                     </div>
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" placeholder=" " required>
+                        <input type="password" id="password" name="password" placeholder=" " required>
                         <label for="">Constraseña</label>
                     </div>
-                    <button>Iniciar</button>
+                    <button type="submit" onclick="validarUsuario()">Iniciar</button>
                 </form>
             </div>
         </div>
