@@ -9,9 +9,11 @@ form.addEventListener('submit', function(event) {
 });
 
 let cuentas = [
-  { nombre: "Mali", saldo: 200, password: "1234" },
-  { nombre: "Gera", saldo: 290, password: "5678" },
-  { nombre: "Maui", saldo: 67, password: "abcd" },
+  { nombre: "Annabeth", saldo: 200, password: "1234" },
+  { nombre: "Hazel", saldo: 290, password: "5678" },
+  { nombre: "Maria", saldo: 85, password: "abcd" },
+   { nombre: "Silena", saldo: 120, password: "efgh" },
+    { nombre: "Clarisse", saldo: 225, password: "ijklm" },
 ];
 
 function validarUsuario() {
@@ -39,3 +41,49 @@ function validarUsuario() {
   
   alert("Usuario o contraseña incorrectos. Intente de nuevo.");
 }
+
+
+function MostrarDatosA() {
+  swal({
+  title: "Datos de la cuenta",
+  text: "Nombre de usuario: Annabeth. Contraseña: 1234",
+  icon: "success",
+  button: "Hecho",
+});
+};
+
+function MostrarDatosH() {
+  swal({
+  title: "Datos de la cuenta",
+  text: "Nombre de usuario: Hazel. Contraseña: 5678",
+  icon: "success",
+  button: "Hecho",
+});
+};
+
+function MostrarDatosM() {
+  swal({
+  title: "Datos de la cuenta",
+  text: "Nombre de usuario: Maria. Contraseña: abcd",
+  icon: "success",
+  button: "Hecho",
+});
+};
+
+function MostrarDatosS() {
+  swal({
+  title: "Datos de la cuenta",
+  text: "Nombre de usuario: Silena. Contraseña: efgh",
+  icon: "success",
+  button: "Hecho",
+});
+};
+
+function MostrarDatosC() {
+  swal({
+  title: "Datos de la cuenta",
+  text: "Nombre de usuario: Clarisse. Contraseña: ijklm",
+  icon: "success",
+  button: "Hecho",
+});
+};

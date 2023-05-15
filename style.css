@@ -8,15 +8,20 @@ Estilos de la pagina de inicio de sesión
     margin: 0;
     font-family: 'poppins',sans-serif;
 }
-section {
+body {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    background: url('img/background.jpg')no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+.form{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: url('img/background.jpg')no-repeat;
-    background-position: center;
-    background-size: cover;
+   
 }
 .form-box {
     position: relative;
@@ -82,5 +87,17 @@ button {
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
+}
+
+.counts button{
+    width: 50%;
+    margin: 20px;
+    align-self: center;
+}
+.text1 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 40px 20px 40px 20px;
 }
 

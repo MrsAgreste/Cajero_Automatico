@@ -8,13 +8,16 @@
     <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+    <!-- Librerias de Alertas -->
+    <script async defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <title>Cajero</title>
 </head>
 <body>
 
-    <section>
+    <section class="form">
         <div class="form-box">
             <div class="form-value">
                 <form action="">
@@ -33,6 +36,14 @@
                 </form>
             </div>
         </div>
+    </section>
+    <section class="counts">
+        <p class="text1">Cuentas</p>
+        <button onclick="MostrarDatosA()"> Annabeth</button>
+        <button onclick="MostrarDatosH()"> Hazel</button>
+        <button onclick="MostrarDatosM()"> Maria</button>
+        <button onclick="MostrarDatosS()"> Silena</button>
+        <button onclick="MostrarDatosC()"> Clarisse</button>
     </section>
 
 

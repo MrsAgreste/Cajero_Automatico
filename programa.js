@@ -13,57 +13,57 @@ function retirar() {
   let retiro = parseFloat(prompt("Ingrese la cantidad que desea retirar:"));
 
   if (isNaN(retiro)) {
-    alert("Ingrese un valor numérico válido.");
+    swal("Ingrese un valor numérico válido.");
     return;
   }
 
   if (retiro < 10) {
-    alert("El monto a retirar no puede ser menor a $10.");
+    swal("El monto a retirar no puede ser menor a $10.");
     return;
   }
 
   if (saldo - retiro < 0) {
-    alert("Fondos insuficientes.");
+    swal("Fondos insuficientes.");
     return;
   }
 
   if (saldo - retiro < 10) {
-    alert("La cuenta debe tener un saldo mínimo de $10.");
+    swal("La cuenta debe tener un saldo mínimo de $10.");
     return;
   }
 
   saldo -= retiro;
   localStorage.setItem("saldo", saldo); // Actualizar saldo en el localStorage
   actualizarSaldo(); // Llamar a la función para actualizar el saldo en la página
-  alert(`Retiró ${retiro}. Saldo restante: ${saldo}`);
+  swal(`Retiró ${retiro}. Saldo restante: ${saldo}`);
 }
 
 function ingresar() {
   let deposito = parseFloat(prompt("Ingrese la cantidad que desea ingresar:"));
 
   if (isNaN(deposito)) {
-    alert("Ingrese un valor numérico válido.");
+    swal("Ingrese un valor numérico válido.");
     return;
   }
 
   if (deposito > 990) {
-    alert("El monto a ingresar no puede ser mayor a $990.");
+    swal("El monto a ingresar no puede ser mayor a $990.");
     return;
   }
 
   if (saldo + deposito > 990) {
-    alert("La cuenta no puede tener un saldo mayor a $990.");
+    swal("La cuenta no puede tener un saldo mayor a $990.");
     return;
   }
 
   saldo += deposito;
   localStorage.setItem("saldo", saldo); // Actualizar saldo en el localStorage
   actualizarSaldo(); // Llamar a la función para actualizar el saldo en la página
-  alert(`Depositó ${deposito}. Saldo actual: ${saldo}`);
+  swal(`Depositó ${deposito}. Saldo actual: ${saldo}`);
 }
 
 function verSaldo() {
-  document.getElementById("saldo-actual").textContent = `$${saldo}`;
+  document.getElementById("saldo-actual").textContent = `$${saldo} MNX`;
   document.getElementById("saldo").style.display = "block";
 }
 
